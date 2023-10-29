@@ -1,4 +1,4 @@
-<!-- ![Cover (2)]() Put image here -->
+![Cover (2)]() <!-- Put image here -->
 
 # Project Spider-Verse
 
@@ -20,7 +20,7 @@ This is the repository for the Spider-Verse project. The project consists of an 
 - `develop` is intended for features under development and not fully validated;
 - `stage` for features that are ready and have been deployed automatically;
 
-## 🗄️ Estrutura de pastas
+## 🗄️ Folders structure
 
 The project is structured as follows:
 
@@ -72,9 +72,6 @@ Now you're ready to explore the project in your local environment!
     <p>&nbsp&nbsp&nbspLívia Minucelli Silva<br>
     &nbsp&nbsp&nbsp<a href="https://www.instagram.com/liviamsi/">Instagram</a>&nbsp;|&nbsp;<a href="https://github.com/aLiviaMs">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/liviamsi/">LinkedIn</p>
 </p>
-<br/><br/>
 <p>
 
 ---
-
-⌨️ com ❤️ por [Michele Ambrosio](https://github.com/micheleambrosio) 😊
