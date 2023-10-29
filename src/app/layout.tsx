@@ -1,14 +1,14 @@
 // next
-import './styles.scss';
-import { Inter } from 'next/font/google';
 import Image from 'next/image';
 
-// Images
+// Assets
 import MenuIcon from '../../public/icons/menu.svg';
 import SpiderLogo from '../../public/spider-logo.svg';
 import ProfileLogo from '../../public/icons/user.svg';
+import { spidermanFont } from '@/fonts';
 
-const inter = Inter({ subsets: ['latin'] })
+// Styles
+import './styles.scss';
 
 export const metadata = {
   title: "Spider-Verse",
@@ -23,28 +23,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={spidermanFont.className}>
         <header>
-          <Image 
+          <Image
             src={MenuIcon}
-            alt='Menu Options' 
-            width={36} 
+            alt='Menu Options'
+            width={36}
             height={25}
           />
-          <Image 
+          <Image
             src={SpiderLogo}
-            alt='Spiderman logo' 
-            width={260} 
+            alt='Spiderman logo'
+            width={260}
             height={70}
           />
-          <Image 
-            src={ProfileLogo} 
-            alt='Login' 
-            width={36} 
+          <Image
+            src={ProfileLogo}
+            alt='Login'
+            width={36}
             height={36}
           />
         </header>
-        
+
         {children}
       </body>
     </html>
