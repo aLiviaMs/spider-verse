@@ -1,0 +1,7 @@
+# Ignora todos os arquivos da pasta pai
+*/*
+
+# Ativa o linting para os arquivos específicos
+!cypress/*
+!jest/*
+!src/*

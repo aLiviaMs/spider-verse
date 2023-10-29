@@ -1,0 +1,81 @@
+// ESLint Rules: https://eslint.org/docs/latest/rules/
+// @typescript-eslint Rules: https://github.com/typescript-eslint/typescript-eslint/tree/v5.62.0/packages/eslint-plugin/docs
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*",
+    "jest.config.ts"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "next",
+        "next/core-web-vitals",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/explicit-member-accessibility": [
+          "error",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "constructors": "no-public"
+            }
+          }
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": [
+          "error",
+          {
+            "allowArgumentsExplicitlyTypedAsAny": true
+          }
+        ],
+        "max-len": [
+          "error",
+          {
+            "code": 150,
+            "tabWidth": 2,
+            "ignoreComments": true,
+            "ignoreUrls": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreRegExpLiterals": true
+          }
+        ],
+        "no-trailing-spaces": "error",
+        "prettier/prettier": "error"
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "next",
+        "next"
+      ],
+      "rules": {}
+    }
+  ],
+  "rules": {
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-extra-semi": "error"
+  }
+}
