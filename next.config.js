@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_URL: "https://64a54c6300c3559aa9bf7245.mockapi.io",
+    API_URL: "https://653dabacf52310ee6a9a439a.mockapi.io/spider-verse",
     DOMAIN_ORIGIN: "http://localhost:3000",
   },
 };
