@@ -2,7 +2,7 @@
 import './styles.scss';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
-import myImage from '/icons/menu.svg';
+import myImage from '../../public/icons/menu.svg';
 
 const inter = Inter({ subsets: ['latin'] })
 
