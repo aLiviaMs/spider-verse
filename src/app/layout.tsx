@@ -2,6 +2,7 @@
 import './styles.scss';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
+import myImage from '/icons/menu.svg';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <header>
           <Image 
-            src='/icons/menu.svg' 
+            src={myImage}
             alt='Menu Options' 
             width={36} 
             height={25}
