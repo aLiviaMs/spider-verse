@@ -1,4 +1,4 @@
-![Cover (2)]() <!-- Put image here -->
+<!-- ![Cover (2)]() Put image here -->
 
 # Project Spider-Verse
 
