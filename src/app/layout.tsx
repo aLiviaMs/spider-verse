@@ -3,6 +3,11 @@ import './styles.scss';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 
+// Images
+import MenuIcon from '../../public/icons/menu.svg';
+import SpiderLogo from '../../public/spider-logo.svg';
+import ProfileLogo from '../../public/icons/user.svg';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -21,19 +26,19 @@ export default function RootLayout({
       <body className={inter.className}>
         <header>
           <Image 
-            src='/icons/menu.svg' 
+            src={MenuIcon}
             alt='Menu Options' 
             width={36} 
             height={25}
           />
           <Image 
-            src='/spider-logo.svg' 
+            src={SpiderLogo}
             alt='Spiderman logo' 
             width={260} 
             height={70}
           />
           <Image 
-            src='/icons/user.svg' 
+            src={ProfileLogo} 
             alt='Login' 
             width={36} 
             height={36}
