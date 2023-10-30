@@ -32,7 +32,7 @@ export default function HeroPictureComponent({ hero }: IHeroPicture) {
     <Image
       src={heroesImage[hero.universe]}
       alt={hero.name}
-      priority
+      unoptimized
     />
   );
 }
