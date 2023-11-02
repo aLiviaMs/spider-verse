@@ -2,6 +2,7 @@
 
 // Libs
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 // Models
 import { IHeroDTO } from '@/interfaces/heroes';
@@ -39,7 +40,9 @@ export default function HeroesListComponent({ heroes }: Readonly<IHeroesProps>) 
             whileTap={{ scale: 0.8 }}
             transition={{ duration: 0.8 }}
           >
-            <HeroPictureComponent hero={hero}/>
+            <Link href={`/hero/${hero.id}`}>
+              <HeroPictureComponent hero={hero}/>
+            </Link>
           </motion.div>
         ))}
       </motion.section>

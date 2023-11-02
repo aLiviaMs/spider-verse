@@ -9,6 +9,7 @@ import { spidermanFont } from '@/fonts';
 
 // Styles
 import './styles.scss';
+import Link from 'next/link';
 
 export const metadata = {
   title: "Spider-Verse",
@@ -18,9 +19,9 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="en">
       <body className={spidermanFont.className}>
@@ -31,12 +32,14 @@ export default function RootLayout({
             width={36}
             height={25}
           />
-          <Image
-            src={SpiderLogo}
-            alt='Spiderman logo'
-            width={260}
-            height={70}
-          />
+          <Link href='/'>
+            <Image
+              src={SpiderLogo}
+              alt='Spiderman logo'
+              width={260}
+              height={70}
+            />
+          </Link>
           <Image
             src={ProfileLogo}
             alt='Login'
