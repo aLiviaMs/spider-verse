@@ -27,12 +27,12 @@ interface IHeroPicture {
   hero: IHeroDTO
 }
 
-export default function HeroPictureComponent({ hero }: IHeroPicture) {
+export default function HeroPictureComponent({ hero }: Readonly<IHeroPicture>) {
   return (
     <Image
       src={heroesImage[hero.universe]}
       alt={hero.name}
-      unoptimized
+      priority
     />
   );
 }
